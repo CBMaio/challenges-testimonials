@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="icon" type="imgage/png" href="img/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href= "responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="principal-container">
+        <div class="imagenes-fondo">
+            <img src="img/pattern-quotes.svg" alt="Comillas" class="imagen-comillas">
+            <img src="img/pattern-curve.svg" alt="Curva" class="imagen-curva">
+            <img src="img/pattern-bg.svg" alt="Decorado mayor" class="imagen-decorado">
+        </div>
+       <section class="tanya-section" id ="first-profile"> 
+            <div class="description">
+                <p>
+                    <q>
+                        I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. 
+                    </q>
+                </p>
+                <p class="name">
+                    <strong>Tanya Sinclair</strong><small>UX Engineer</small>
+                </p>   
+            </div>
+            <div class="profile">
+                <img src="img/image-tanya.jpg" alt="Tanya" class="image-tanya" id="image-tanya">
+                <div class="button">
+                    <img src="img/icon-prev.svg" alt="Icono volver"  id="button-prev" onclick="changeProfile()" class="btnSlide">
+                    <img src="img/icon-next.svg" alt="Icono siguiente" id="button-next" onclick="changeProfile()"  class="btnSlide">
+                </div>
+            </div> 
+        </section>
+        <section class="tanya-section second-profile" id= "john-section"> 
+            <div class="description">
+                <p>
+                    <q id="text-tanya">
+                        If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer.
+                    </q>
+                </p>
+                <p class="name">
+                    <strong>John Tarkpor</strong><small>Junior Front-end Developer</small>
+                </p>   
+            </div>
+            <div class="profile">
+                <img src="img/image-john.jpg" alt="Tanya" class="image-tanya" id="image-tanya">
+                <div class="button">
+                    <img src="img/icon-prev.svg" alt="Icono volver"  onclick="changeProfile()" class="btnSlide">
+                    <img src="img/icon-next.svg" alt="Icono siguiente"  onclick="changeProfile()" class="btnSlide">
+                </div>
+            </div> 
+        </section>
+    </div> 
+<script src="main.js"></script>
+</body>
+
+</html>

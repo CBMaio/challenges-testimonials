@@ -1,0 +1,192 @@
+body{
+    background: #aaa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.principal-container{
+    background-color:  #fff;
+    border: 1px solid black;
+    width: 75%;
+    height: 90vh;
+    margin: auto;
+    position: relative;
+    margin-top: 31px;
+}
+
+.imagen-curva{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 450px;
+}
+
+.imagen-decorado{
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    width: 500px;
+    z-index: 0;
+}
+
+.imagen-comillas{
+    position: absolute;
+    top: 25%;
+    left: 15%
+    
+}
+
+.tanya-section{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    position: relative;
+    top: 76px;
+    height: 75%;
+}
+
+@keyframes aparicion {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.8;
+    }
+}
+
+.image-tanya{
+    width: 380px;
+    box-shadow: 6px 14px 15px -10px hsl(240, 38%, 20%);
+    animation: 2s aparicion 1;
+}
+
+.description  {
+    height: 40%;
+    margin-top: 120px;
+    font-size: 1.2rem;
+    margin-left: 60px;
+    width: 400px;
+    position: relative;
+    z-index: 100;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+}
+
+.button{
+    width: 90px;
+    position: relative;
+    bottom: 16px;
+    left: 16px;
+    border-radius: 30px ;
+    box-shadow: 1px 1px 10px hsl(240, 38%, 20%);
+    background: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button > img {
+    padding: 10px;
+}
+
+.btnSlide:hover{
+    transform: scale(1.3);
+    transition-duration: 0.3s;
+    
+}
+
+
+@media (max-width: 768px) {
+    .principal-container{
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .imagenes-fondo{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        align-items: center;
+    }
+
+    .imagen-comillas{
+        order: 2;
+        width: 25%;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+        
+    .imagen-curva{
+        order: 3;
+        width: 100%;
+    }
+
+    .imagen-decorado{
+        width: 95%;
+        order: 1;
+        margin-bottom: 10%;
+        position: relative;
+        right: 0;
+        top: 0
+    }
+
+    .tanya-section{
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .description{
+        font-weight: 300;
+        order: 2;
+        width: 90%;
+        text-align: center;
+        align-self: center;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .name > small {
+        display: block;
+    }
+
+    .profile{
+        align-items: center;
+        margin-top: 10%;
+        position: relative;
+    }
+
+    .image-tanya{
+        width: 75%;
+    }
+}   
+
+@media (min-width: 650px) and (max-width: 1000px){
+    .description{
+        font-weight: 500;
+        font-size: 1.6rem;
+    }
+}
+
+.second-profile{
+    display: none;
+}
+
+.extra-class{
+    display: none;
+}
